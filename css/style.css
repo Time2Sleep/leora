@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "PFBeauSansPro"; 
+    src: url("PFBeauSansPro-SeBold.ttf") format("truetype"); 
+} 
+
+
+
+body {
+    font-family: "PFBeauSansPro"; 
+    margin: 0;
+    background: #642C5D;
+    color: white;
+    font-size: 32rem;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.image{
+    width: 660rem;
+    margin-right: 141rem;
+}
+
+.image img{
+    width: 100%;
+}
+.content{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin: 20vh 30rem 0 0;
+}
+
+.info{
+    margin-top: 86rem;
+}
+
+.info p:nth-child(1){
+    margin-bottom: 16.64rem;
+}
+
+.info p:nth-child(2){
+    margin-bottom: 93.14rem;
+}
+
+.info p:nth-child(3){
+    margin-bottom: 99.59rem;
+}
+.links{
+    margin-bottom: 45rem;
+    padding-left: 50rem;
+}
+
+.links a:nth-child(1){
+    margin-right: 100rem;
+}
+.links a:nth-child(2){
+    text-decoration-line: underline;
+}
+.links a{
+    position: relative;
+    font-size: 25rem;
+}
+.links a:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -40rem;
+}
+.links a:nth-child(1):before{
+    width: 20rem;
+    height: 20rem;
+    margin-top: -10rem;
+    background: url('../images/phone.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.links a:nth-child(2):before{
+    width: 27rem;
+    height: 27rem;
+    margin-top: -13.5rem;
+    background: url('../images/mail.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.price{
+    
+    font-size: 25rem;
+}
+.price a{
+    margin-left: 22rem;
+    text-align: center;
+    display: inline-block;
+    width: 208rem;
+    height: 60rem;
+    line-height: 60rem;
+    background: #fff;
+    color: #642C5D;
+    border-radius: 100rem;
+}
+
+@media(max-width:650px){
+    body{
+        font-size: 12rem;
+    }
+    .content{
+        flex-direction: column;
+        margin: 10vh 0 0;
+    }
+    .image{
+        width: 243rem;
+        margin: 0 auto 25rem;
+    }
+    .info{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .info p:nth-child(1){
+        margin-bottom: 11rem;
+    }
+    .info p:nth-child(2){
+        margin-bottom: 35rem;
+    }
+    .info p:nth-child(3){
+        margin-bottom: 37rem;
+    }
+    .links{
+        padding-left: 24.72rem;
+    }
+    .links a{
+        font-size: 12rem;
+    }
+    .links a:nth-child(1){
+        margin-right: 37rem;
+    }
+    .price{    
+        font-size: 12rem;
+    }
+    .links a:nth-child(1):before{
+        width: 9.44rem;
+        height: 9.44rem;
+        margin-top: -4.72rem;
+    }
+    .links a:nth-child(2):before{
+        width: 14rem;
+        height: 14rem;
+        margin-top: -7rem;
+    }
+    .links a:before{
+        left: -20rem;
+    }
+    .price a{
+        margin: 12rem auto 0;
+        width: 205rem;
+        height: 40rem;
+        line-height: 40rem;
+        border-radius: 47.21rem;
+    }
+
+}
